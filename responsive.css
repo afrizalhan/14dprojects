@@ -61,6 +61,15 @@
     .team-member{
       height: 1700px;
     }
+    .contacts-section{
+        flex-wrap: wrap;
+    }
+    .contacts{
+        width: 100%;
+        margin-bottom: 70px;
+        flex: auto;
+        flex-direction: row;
+    }
     .footer-logo, .footer-copy{
       font-size: 15px;
     }
