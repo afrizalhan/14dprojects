@@ -54,6 +54,9 @@ header {
 .top-wrapper h1{
   font-size: 36px
 }
+.top-wrapper h1, p, span{
+  animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
+}
 
 header .btn {
   padding: 12px 24px;
@@ -137,6 +140,43 @@ header .btn {
   width: 20%;
 }
 
+.contacts{
+  text-align: center;
+}
+.contact h2{
+  text-align: center;
+}
+.contacts-section{
+  display: flex;
+}
+.contacts{
+  width: 33.33%;
+}
+.contact hr{
+  width: 20%;
+  margin-bottom: 80px;
+  border: 1px solid blue;
+}
+.contact{
+  padding-top: 50px;
+  padding-bottom: 90px;
+  background-color: #381249;
+  color: white;
+}
+.contacts-section .fa{
+  font-size: 28px;
+}
+
+.contacts-section h3{
+  padding-bottom: 20px;
+}
+
+.btn-contact{
+  padding: 10px 20px;
+  background-color: #8e44ad;
+  border-radius:15px;
+}
+
 .footer {
   background: linear-gradient(to right, #9b59b6, #8e44ad, #1a17e4);
   color: #fff;
@@ -160,6 +200,16 @@ header .btn {
 .row{
   display: block;
   width: 100%;
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
 }
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
